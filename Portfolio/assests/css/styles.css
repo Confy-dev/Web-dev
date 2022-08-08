@@ -80,6 +80,9 @@ header .content-wrapper{
     background-color: rgba(0,0,0,0.2);
     padding: 1em;
     top: 45%;
+    left: 10%;
+    text-align: center;
+    transform: translate(-5%, 0%);
     z-index: 10;
 }
 header h1{
@@ -130,7 +133,7 @@ section  h2{
     line-height: 1.5em;
     font-weight: 300;
     text-align: center;
-    font-size: 1em;
+    font-size: .8em;
 }
 
 /* -----------------------------------  
@@ -164,11 +167,14 @@ section  h2{
 .contact .contact-address{
     text-align: left;
     font-weight: 300;
-    font-size: .9em;
+    font-size: 1em;
     
 }
+.contact ul{
+    list-style-type: disc;
+    list-style-position: inside;
+}
 .contact .content {
-    /* text-transform: uppercase; */
     flex-direction: column;
     gap: 2em;
 }
@@ -190,6 +196,7 @@ footer span{
 }
 footer .copyrights .upcc{
     text-transform: uppercase;
+    margin-block: .7em;
 }
 .scroll-top *{
     float: right;
