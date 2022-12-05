@@ -1,0 +1,330 @@
+/* ----------------------------------------------
+    #Declaration of GLobal variables
+---------------------------------------------- */
+:root {
+  --pry-clr-orange: rgb(255, 94, 0);
+  --df-clr-black: rgb(37, 36, 36);
+  --white-clr: #f3f3f3;
+}
+
+/* ----------------------------------------------
+    #Global Styles
+---------------------------------------------- */
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+span {
+  display: block;
+}
+.container {
+  max-width: 90%;
+  margin-inline: auto;
+}
+.flex {
+  display: flex;
+}
+
+.btn {
+  font-size: calc(1em + 1vw);
+  padding-inline: calc(2em + 2vw);
+  padding-block: calc(0.5em + 0.5vw);
+  border: none;
+  border-radius: 5px;
+}
+
+/* ----------------------------------------------
+    #Colors
+---------------------------------------------- */
+
+header,
+.pricing,
+.pricing .btn,
+.dance-tour .info {
+  background-color: var(--df-clr-black);
+}
+section,
+.pricing .box,
+.btn {
+  background-color: var(--pry-clr-orange);
+}
+.hero.content,
+.btn,
+header,
+section {
+  color: var(--white-clr);
+}
+
+/* ----------------------------------------------
+    #Fonts and Typography
+---------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav .link-wrapper,
+.btn {
+  text-transform: uppercase;
+}
+
+.hero .content,
+section,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+}
+
+.hero h1,
+.hero .content {
+  text-align: left;
+}
+
+p{
+    margin-block: calc(0.4em + 0.4vh);
+    font-size: calc(.9em + .2vw);
+}
+
+.hero p {
+  font-size: calc(1em + 1vw);
+  line-height: calc(1.2em + 1vh);
+ 
+}
+.hero h1 {
+    text-transform: capitalize;
+    font-size: calc(6vw + 1.2em);
+}
+
+nav .link-wrapper {
+    font-size: calc(0.5em + 1vw);
+    font-weight: 550;
+  }
+
+/* ----------------------------------------------
+    #Header and Navigation
+---------------------------------------------- */
+nav .nav-content {
+  padding: 0.4em;
+  align-items: center;
+}
+nav .link-wrapper {
+  margin: auto;
+  gap: calc(3vw + 1rem);
+  font-size: calc(0.5em + 1vw);
+  font-weight: 550;
+}
+nav .logo {
+  max-width: calc(2rem + 6vw);
+}
+/* ----------------------------------------------
+    # Hero Section
+---------------------------------------------- */
+
+.hero {
+  background-image: url(../../assets/img/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 60vh;
+}
+.hero .content-wrapper {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* ----------------------------------------------
+    # Section Global
+---------------------------------------------- */
+section{
+    padding-block: 2em;
+}
+section .header {
+  width: 70%;
+  margin-inline: auto;
+}
+.content-wrapper,
+.content {
+  gap: calc(1vw + 1rem);
+}
+
+.content-wrapper,
+.content{
+  flex-direction: column;
+}
+
+/* ----------------------------------------------
+    # Dance Tour
+---------------------------------------------- */
+.dance-tour{
+  background-image: url(../../assets/img/Shape@1x.png);
+  background-repeat: no-repeat;
+  background-position: left left;
+  background-size: cover;
+}
+
+.dance-tour .info{
+    padding-block: 1.5em;
+    padding-inline: .2em;
+}
+
+/* ----------------------------------------------
+    # pricing 
+---------------------------------------------- */
+
+ /* To centralize the pricing image */
+.pricing img{
+  margin-inline: auto;
+  width:  25%;
+  margin-block: 2em;
+}
+
+/* .pricing img, */
+.pricing p,
+.pricing h4{
+  margin-block: 1em;
+}
+.pricing .box{
+    padding-block: 2em;
+    padding-inline: 1em;
+}
+.pricing .btn{
+  padding-block: .4em;
+  font-weight: 300;
+  font-size: 1.4rem;
+}
+
+
+/*
+   Dance Advert
+ */
+aside .content{
+  display: grid;
+  grid-auto-columns: auto;
+  text-align: center;
+}
+
+aside .content h4{
+  font-size: calc(1vw + 1.2em);
+}
+aside .content .btn{
+  padding-block: .3em ;
+  padding-inline: calc(1vw + 2em );
+}
+aside .content p{
+  margin-block: 1em;
+  font-size: 1em;
+}
+.col-start-1{
+  grid-row-start: 1;
+}
+aside .content .second-box{
+  padding-block: 3em;
+  padding-inline: 1em;
+  margin-block: auto;
+}
+
+/*
+   Statistics Section 
+ */
+
+
+.stats .content{
+  justify-content: center;
+  align-items: center;
+}
+
+.stats .content p{
+  font-weight: 800;
+  font-size: calc(1vh + 1em);
+}
+
+
+.stats .content p span{
+  font-weight: 200;
+  text-transform: uppercase;
+  font-size: calc(.2vh + .4em);
+}
+
+/* 
+    About Section 
+ */
+.about{
+  position: relative;
+  background-image: url(../img/About-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 50vh;
+}
+.about .content-wrapper{
+  position: absolute;
+  background-color: rgba(255, 68, 0, 0.502);
+  height: 100%;
+  width: 100%;
+  top: 0;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.about h6{
+  font-size: calc(1em + 1vw);
+}
+
+
+/* ----------------------------------------------
+    # Media Queries
+---------------------------------------------- */
+@media (min-width: 33em) {
+  .hero {
+    height: 100vh;
+  }
+  .hero .content-wrapper {
+    justify-content: start;
+  }
+  .hero .content {
+    max-width: 50%;
+  }
+
+  .content-wrapper,
+  .content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  aside .content{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .col-start-1{
+    grid-row-start: auto;
+  }
+}
